@@ -1,81 +1,51 @@
 <?php
-  if (!empty($_GET['q'])) {
-    switch ($_GET['q']) {
-      case 'info':
-        phpinfo(); 
-        exit;
+if (!empty($_GET['q'])) {
+  switch ($_GET['q']) {
+    case 'info':
+      phpinfo();
+      exit;
       break;
-    }
   }
+}
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Laragon</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Karla:400" rel="stylesheet" type="text/css">
-        <script src="https://d3js.org/d3.v6.js"></script>
+<head>
+  <title>Moisés Zárate Totolhua</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400" rel="stylesheet" type="text/css">
+  <script src="https://d3js.org/d3.v6.js"></script>
+
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <h1>Herramientas de Visualización</h1>
+    <p>Tarea 01</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Column 1</h3>
+        <p>Datos de la tarea</p>
         
-        <style>
-            html, body {
-                height: 100%;
-            }
+      </div>
+      <div class="col-sm-8">
+        <h3>Respuestas a las preguntas</h3>
+        <p>Pregunta 01 </p>
+        <p>Respuesta 02 </p>
+      </div>
+      
+    </div>
+  </div>
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Karla';
-            }
+</body>
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-
-            .opt {
-                margin-top: 30px;
-            }
-
-            .opt a {
-              text-decoration: none;
-              font-size: 150%;
-            }
-            
-            a:hover {
-              color: red;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title" title="Laragon">Tarea 01 de Visualización </div>
-     
-                <div class="info"><br />
-                      <?php print($_SERVER['SERVER_SOFTWARE']); ?><br />
-                      PHP version: <?php print phpversion(); ?>   <span><a title="phpinfo()" href="/?q=info">info</a></span><br />
-                      Document Root: <?php print ($_SERVER['DOCUMENT_ROOT']); ?><br />
-
-                </div>
-                <div class="opt">
-                  <div><a title="Getting Started" href="https://laragon.org/docs">Revisando </a></div>
-                </div>
-				mozato.net
-            </div>
-
-        </div>
-    </body>
 </html>
