@@ -33,7 +33,7 @@ if (!empty($_GET['q'])) {
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <h3>Column 1</h3>
+        <h3>Menu</h3>
         <p>Datos de la tarea</p>
         
       </div>
